@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title>Looksay 140 Bytes</title>
+
+<script type="text/javascript" src="looksay2.js"></script>
+
+<script type="text/javascript">
+
+function test(num, expected) {
+    var out = f(num),
+        pass = (out === expected) ? "OK" : "Fail";
+
+    console.log(num + ": " + out + " ... " + pass);
+}
+
+var min = "f=" + f.toString().replace(/[\n ]/g, "");
+console.log(min);
+console.log("Characters: " + min.length + "\n");
+
+test(0, "10");
+test(1, "11");
+test(937, "191317");
+test(990, "2910");
+test(12, "1112");
+test(500, "1520");
+test(4444, "44");
+test(5003, "152013");
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
