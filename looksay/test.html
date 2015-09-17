@@ -2,15 +2,13 @@
 <head>
   <title>Looksay 140 Bytes</title>
 
-<script type="text/javascript" src="looksay2.js"></script>
+<script type="text/javascript" src="looksay.min.js"></script>
 
 <script type="text/javascript">
 
 function test(num, expected) {
-    var out = f(num),
-        pass = (out === expected) ? "OK" : "Fail";
-
-    console.log(num + ": " + out + " ... " + pass);
+    var actual = f(num);
+    console.log(num + ": " + actual + " ... " + (actual === expected ? "OK" : "Fail"));
 }
 
 var min = "f=" + f.toString().replace(/[\n ]/g, "");
